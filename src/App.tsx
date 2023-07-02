@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-function App() {
+// antd imports
+
+// project imports
+import MainLayout from "./layout";
+
+const App: FC = () => {
+
   return (
-    <>
-    </>
+    <MainLayout />
   );
 }
 
