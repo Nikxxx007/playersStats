@@ -3,7 +3,7 @@ import React, {FC} from 'react';
 // antd imports
 
 // project imports
-import MainLayout from "./layout";
+import MainLayout from "./layout/MainLayout";
 
 const App: FC = () => {
 
