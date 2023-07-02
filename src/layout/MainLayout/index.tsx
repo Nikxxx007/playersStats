@@ -4,7 +4,9 @@ import React, {FC} from 'react';
 import {Layout} from 'antd';
 
 // project import
-import HeaderLayout from "./MainLayout/Header";
+import HeaderLayout from "./Header";
+import MainSider from "./Sider";
+import ContentLayout from "./ContentLayout";
 
 const MainLayout: FC = () => {
     return (
@@ -12,6 +14,10 @@ const MainLayout: FC = () => {
             <HeaderLayout>
                 <h1>Header</h1>
             </HeaderLayout>
+            <Layout>
+                <ContentLayout />
+                <MainSider />
+            </Layout>
         </Layout>
     );
 };
