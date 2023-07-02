@@ -1,14 +1,18 @@
 import React, {FC} from 'react';
 
 // antd imports
+import {ConfigProvider} from "antd";
 
 // project imports
-import MainLayout from "./layout/MainLayout";
+import {config} from "./themes";
+import Routes from "./routes";
 
 const App: FC = () => {
 
   return (
-    <MainLayout />
+    <ConfigProvider theme={config}>
+      <Routes />
+    </ConfigProvider>
   );
 }
 
