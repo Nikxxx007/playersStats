@@ -17,11 +17,15 @@ const StyledContent: typeof Content = styled(Content)<LayoutProps>`
   min-height: 280px;
 ` as any;
 
-const ContentLayout: FC = () => {
+interface ContentProps {
+    children?: React.ReactElement | React.ReactNode
+}
+
+const ContentLayout: FC<ContentProps> = ({children}) => {
     return (
         <StyledLayout>
             <StyledContent>
-                Content
+                {children}
             </StyledContent>
         </StyledLayout>
     );
