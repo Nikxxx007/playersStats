@@ -15,7 +15,9 @@ const MainLayout: FC = () => {
                 <h1>Header</h1>
             </HeaderLayout>
             <Layout>
-                <ContentLayout />
+                <ContentLayout>
+                    Content
+                </ContentLayout>
                 <MainSider />
             </Layout>
         </Layout>
