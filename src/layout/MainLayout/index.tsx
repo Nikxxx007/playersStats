@@ -4,20 +4,16 @@ import React, {FC} from 'react';
 import {Layout} from 'antd';
 
 // project import
-import HeaderLayout from "./Header";
+import MainHeader from "./Header";
 import MainSider from "./Sider";
-import ContentLayout from "./ContentLayout";
+import MainContent from "./MainContent";
 
 const MainLayout: FC = () => {
     return (
         <Layout>
-            <HeaderLayout>
-                <h1>Header</h1>
-            </HeaderLayout>
+            <MainHeader />
             <Layout>
-                <ContentLayout>
-                    Content
-                </ContentLayout>
+                <MainContent />
                 <MainSider />
             </Layout>
         </Layout>

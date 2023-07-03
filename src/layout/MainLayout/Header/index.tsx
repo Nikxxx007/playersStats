@@ -1,26 +1,14 @@
 import React, {FC} from 'react';
 
-import {Layout} from 'antd';
-import {LayoutProps} from 'antd/lib/layout'
-import styled from 'styled-components';
+// project imports
+import HeaderLayout from "./HeaderContent/HeaderLayout";
 
-const {Header} = Layout
-
-const StyledHeader: typeof Header = styled(Header)<LayoutProps>`
-  display: flex;
-  align-items: center;
-` as any;
-
-interface HeaderProps {
-    children?: React.ReactElement | React.ReactNode
-}
-
-const HeaderLayout: FC<HeaderProps> = ({children}) => {
+const MainHeader: FC = () => {
     return (
-        <StyledHeader>
-            {children}
-        </StyledHeader>
+        <HeaderLayout>
+            Header
+        </HeaderLayout>
     );
 };
 
-export default HeaderLayout;
+export default MainHeader;
